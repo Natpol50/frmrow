@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "user": "atf",
+    "date": "2025-11-07T10:02:30.081543",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "df37ee34ecdc16c3ecd31e90eb6c81fe4ddf5e4e4725025ca78bdf39e2bf6b74",
+  "hash_config": "1bcda7c098f3bec9c8cf516f88e5daa23314825a02b35382423c38087f2e70a6",
+  "config": {
+    "instance_name": "R101",
+    "solver_name": "local_search",
+    "seed": 2,
+    "parameters": {
+      "max_time": null,
+      "max_iterations": 10000,
+      "max_iterations_no_improvement": 5000,
+      "record_convergence": true,
+      "convergence_interval": 1,
+      "verbose": true,
+      "seed": null,
+      "name": "local_search_best",
+      "strategy": "best_improvement",
+      "operators": [
+        "relocate",
+        "2opt"
+      ],
+      "neighborhood_size": null,
+      "shuffle_customers": true,
+      "shuffle_routes": true
+    }
+  },
+  "results": {
+    "time_seconds": 1.6618492603302002,
+    "n_iterations": 17,
+    "cost": 1836.5,
+    "solution": [
+      [
+        31,
+        30,
+        20,
+        1
+      ],
+      [
+        2,
+        57,
+        58
+      ],
+      [
+        76,
+        79,
+        3,
+        77
+      ],
+      [
+        40,
+        94,
+        96
+      ],
+      [
+        5,
+        16,
+        86,
+        17
+      ],
+      [
+        52,
+        18,
+        6
+      ],
+      [
+        62,
+        88,
+        7
+      ],
+      [
+        83,
+        82,
+        8
+      ],
+      [
+        11,
+        19,
+        10
+      ],
+      [
+        12,
+        78,
+        34,
+        68
+      ],
+      [
+        92,
+        42,
+        15,
+        41,
+        26
+      ],
+      [
+        14,
+        44,
+        38,
+        43,
+        91,
+        100
+      ],
+      [
+        72,
+        75,
+        56,
+        4
+      ],
+      [
+        39,
+        23,
+        67,
+        55,
+        25
+      ],
+      [
+        53
+      ],
+      [
+        27,
+        69,
+        51,
+        9,
+        66
+      ],
+      [
+        28,
+        29,
+        54,
+        24,
+        80
+      ],
+      [
+        63,
+        90,
+        32,
+        70
+      ],
+      [
+        33,
+        81,
+        50
+      ],
+      [
+        65,
+        71,
+        35
+      ],
+      [
+        36,
+        64,
+        49,
+        48
+      ],
+      [],
+      [
+        45,
+        47,
+        46
+      ],
+      [
+        59,
+        98,
+        61,
+        85,
+        37,
+        93
+      ],
+      [
+        95,
+        99,
+        84,
+        60,
+        89
+      ],
+      [
+        21,
+        73,
+        22,
+        74
+      ],
+      [],
+      [
+        87,
+        97,
+        13
+      ]
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 1954.500000000001
+      },
+      {
+        "iteration": 1,
+        "cost": 1943.1
+      },
+      {
+        "iteration": 2,
+        "cost": 1933.0
+      },
+      {
+        "iteration": 3,
+        "cost": 1920.7
+      },
+      {
+        "iteration": 4,
+        "cost": 1909.1000000000001
+      },
+      {
+        "iteration": 5,
+        "cost": 1900.1000000000001
+      },
+      {
+        "iteration": 6,
+        "cost": 1891.3000000000002
+      },
+      {
+        "iteration": 7,
+        "cost": 1885.8000000000002
+      },
+      {
+        "iteration": 8,
+        "cost": 1882.2000000000003
+      },
+      {
+        "iteration": 9,
+        "cost": 1872.9000000000003
+      },
+      {
+        "iteration": 10,
+        "cost": 1870.1000000000004
+      },
+      {
+        "iteration": 11,
+        "cost": 1867.4000000000003
+      },
+      {
+        "iteration": 12,
+        "cost": 1864.2000000000003
+      },
+      {
+        "iteration": 13,
+        "cost": 1839.0000000000002
+      },
+      {
+        "iteration": 14,
+        "cost": 1837.2000000000003
+      },
+      {
+        "iteration": 15,
+        "cost": 1836.7000000000003
+      },
+      {
+        "iteration": 16,
+        "cost": 1836.5000000000002
+      },
+      {
+        "iteration": 17,
+        "cost": 1836.5000000000002
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 1954.5,
+      "n_vehicles": 26,
+      "improvement": 117.99999999999977,
+      "improvement_pct": 6.037349705807101,
+      "constructor": "savings_parallel",
+      "solver_name": "LocalSearchSolver",
+      "final_cost": 1836.5000000000002,
+      "iterations": 17,
+      "time_seconds": 1.6619696617126465,
+      "accepted_moves": 16,
+      "rejected_moves": 0,
+      "acceptance_rate": 0.9411764705882353,
+      "iterations_per_second": 10.228826910403187
+    }
+  }
+}
