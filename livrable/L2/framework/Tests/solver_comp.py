@@ -74,18 +74,16 @@ def main():
         'simulated_annealing': SimulatedAnnealingConfig(
             name='simulated_annealing_hot',
             initial_temperature=2000.0,  # Température élevée
-            cooling_rate=0.99999,
+            cooling_rate=0.9999,
             max_iterations=1000000,
-            max_iterations_no_improvement=5000,
             verbose=True
         ),
         
         'simulated_annealing': SimulatedAnnealingConfig(
             name='simulated_annealing_cold',
             initial_temperature=500.0,  # Température plus basse
-            cooling_rate=0.9999999,
+            cooling_rate=0.9999,
             max_iterations=10000000,
-            max_iterations_no_improvement=5000,
             verbose=True
         ),
     }
@@ -148,8 +146,7 @@ def test_single_run():
     print("Testing LocalSearch with verbose output:\n")
     config_ls = LocalSearchConfig(
         strategy='first_improvement',
-        max_iterations=300000,
-        max_iterations_no_improvement=5000,
+        max_iterations=300,
         verbose=True
     )
     
@@ -164,9 +161,8 @@ def test_single_run():
     # SimulatedAnnealing avec verbose
     print("\nTesting SimulatedAnnealing with verbose output:\n")
     config_sa = SimulatedAnnealingConfig(
-        initial_temperature=1000.0,
-        cooling_rate=0.995,
-        max_iterations=5000,
+        initial_temperature=10000000.0,
+        cooling_rate=0.9999,
         verbose=True
     )
     
@@ -234,10 +230,10 @@ def test_batch():
 if __name__ == "__main__":
     
     # Option 1: Comparaison complète
-    main()
+    # main()
     
     # Option 2: Run unique avec verbose
-    # test_single_run()
+    test_single_run()
     
     # Option 3: Batch sur plusieurs instances
     # test_batch()
