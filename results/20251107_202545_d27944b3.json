@@ -1,0 +1,313 @@
+{
+  "metadata": {
+    "user": "atf",
+    "date": "2025-11-07T20:25:45.651697",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "d27944b35af7c3f81526ca9b103bcf7e320ae31ca1231b89586351d9243a5c0f",
+  "hash_config": "cded93d48da75c3371f79c63f73c014bd2236f1dda755e10a2462d23228b034f",
+  "config": {
+    "instance_name": "R101",
+    "solver_name": "simulated_annealing",
+    "seed": 42,
+    "parameters": {
+      "max_time": null,
+      "max_iterations": 50000,
+      "max_iterations_no_improvement": null,
+      "record_convergence": true,
+      "verbose": true,
+      "seed": null,
+      "name": "simulated_annealing",
+      "initial_temperature": 10000.0,
+      "cooling_rate": 0.9999,
+      "min_temperature": 0.001,
+      "reheating": false,
+      "reheating_interval": 1000,
+      "reheating_factor": 1.5,
+      "validate_neighbors": true
+    }
+  },
+  "results": {
+    "time_seconds": 9.13194990158081,
+    "n_iterations": 50000,
+    "cost": 1855.6,
+    "solution": [
+      [
+        31,
+        30,
+        20,
+        1
+      ],
+      [
+        40,
+        26
+      ],
+      [
+        76,
+        79,
+        3,
+        77
+      ],
+      [
+        21,
+        54
+      ],
+      [
+        5,
+        16,
+        86,
+        17
+      ],
+      [
+        52,
+        18,
+        6
+      ],
+      [
+        62,
+        88,
+        7
+      ],
+      [
+        83,
+        82,
+        8,
+        60,
+        89
+      ],
+      [
+        11,
+        19,
+        10
+      ],
+      [
+        12,
+        78,
+        34,
+        68
+      ],
+      [
+        92,
+        42,
+        15,
+        57,
+        37
+      ],
+      [
+        14,
+        44,
+        38,
+        43,
+        91,
+        100
+      ],
+      [
+        73,
+        41,
+        56,
+        4
+      ],
+      [
+        39,
+        23,
+        67,
+        55,
+        25
+      ],
+      [
+        94,
+        58
+      ],
+      [
+        27,
+        69,
+        51,
+        9,
+        35
+      ],
+      [
+        28,
+        29,
+        24,
+        80
+      ],
+      [
+        63,
+        90,
+        32,
+        70
+      ],
+      [
+        33,
+        81,
+        50
+      ],
+      [
+        65,
+        71,
+        66
+      ],
+      [
+        36,
+        64,
+        49,
+        48
+      ],
+      [],
+      [
+        45,
+        47,
+        46
+      ],
+      [
+        59,
+        99,
+        85,
+        93
+      ],
+      [
+        95,
+        98,
+        61,
+        84,
+        96
+      ],
+      [
+        72,
+        75,
+        22,
+        74
+      ],
+      [
+        53
+      ],
+      [
+        2,
+        87,
+        97,
+        13
+      ]
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 1954.500000000001
+      },
+      {
+        "iteration": 1,
+        "cost": 1954.5
+      },
+      {
+        "iteration": 684,
+        "cost": 1944.3999999999999
+      },
+      {
+        "iteration": 898,
+        "cost": 1942.1999999999998
+      },
+      {
+        "iteration": 1067,
+        "cost": 1937.9999999999998
+      },
+      {
+        "iteration": 3609,
+        "cost": 1937.1999999999996
+      },
+      {
+        "iteration": 4646,
+        "cost": 1924.8999999999999
+      },
+      {
+        "iteration": 6443,
+        "cost": 1914.1999999999998
+      },
+      {
+        "iteration": 10172,
+        "cost": 1908.3999999999996
+      },
+      {
+        "iteration": 10365,
+        "cost": 1907.5999999999997
+      },
+      {
+        "iteration": 12254,
+        "cost": 1906.4999999999998
+      },
+      {
+        "iteration": 15469,
+        "cost": 1906.2999999999997
+      },
+      {
+        "iteration": 15709,
+        "cost": 1905.5999999999997
+      },
+      {
+        "iteration": 17291,
+        "cost": 1899.1999999999998
+      },
+      {
+        "iteration": 21813,
+        "cost": 1898.3
+      },
+      {
+        "iteration": 25084,
+        "cost": 1895.1
+      },
+      {
+        "iteration": 27914,
+        "cost": 1882.1
+      },
+      {
+        "iteration": 29743,
+        "cost": 1874.8999999999999
+      },
+      {
+        "iteration": 31113,
+        "cost": 1872.1999999999998
+      },
+      {
+        "iteration": 34884,
+        "cost": 1862.6
+      },
+      {
+        "iteration": 37888,
+        "cost": 1860.6
+      },
+      {
+        "iteration": 39816,
+        "cost": 1856.3
+      },
+      {
+        "iteration": 45077,
+        "cost": 1855.6
+      },
+      {
+        "iteration": 50000,
+        "cost": 1855.6
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 1954.5,
+      "n_vehicles": 27,
+      "improvement": 98.90000000000009,
+      "improvement_pct": 5.060117677155287,
+      "constructor": "savings_parallel",
+      "solver_name": "SimulatedAnnealingSolver",
+      "final_cost": 1855.6,
+      "iterations": 50000,
+      "time_seconds": 9.13206696510315,
+      "accepted_moves": 49839,
+      "rejected_moves": 0,
+      "acceptance_rate": 0.99678,
+      "iterations_per_second": 5475.211711769925,
+      "final_temperature": 68.4559970732832,
+      "initial_temperature": 10000.0,
+      "cooling_rate": 0.9999,
+      "invalid_neighbors": 161,
+      "invalid_neighbor_rate": 0.00322
+    }
+  }
+}

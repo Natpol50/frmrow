@@ -1,14 +1,14 @@
 {
   "metadata": {
     "user": "atf",
-    "date": "2025-11-07T10:02:28.156651",
+    "date": "2025-11-07T20:18:22.815813",
     "hardware_id": "Ashas-lvmxxr-u",
     "cpu_arch": "x86_64",
     "ram": "30.9GB",
     "python_version": "3.11.14"
   },
-  "hash_run": "8a31abf19d9f9fc98c05051de077a2129aa5639e1c9638ee93ea14fab4110100",
-  "hash_config": "1bcda7c098f3bec9c8cf516f88e5daa23314825a02b35382423c38087f2e70a6",
+  "hash_run": "295f8009454c11821d1a9e8f1524dcc62562be6f79f9548503725fdec581ded1",
+  "hash_config": "f8290ef5cb486734dcefc0165b2f979e597c558bd067bd5d9a25cf80eab45166",
   "config": {
     "instance_name": "R101",
     "solver_name": "local_search",
@@ -18,7 +18,6 @@
       "max_iterations": 10000,
       "max_iterations_no_improvement": 5000,
       "record_convergence": true,
-      "convergence_interval": 1,
       "verbose": true,
       "seed": null,
       "name": "local_search_best",
@@ -33,7 +32,7 @@
     }
   },
   "results": {
-    "time_seconds": 1.6621513366699219,
+    "time_seconds": 1.665959119796753,
     "n_iterations": 17,
     "cost": 1836.5,
     "solution": [
@@ -275,11 +274,11 @@
       "solver_name": "LocalSearchSolver",
       "final_cost": 1836.5000000000002,
       "iterations": 17,
-      "time_seconds": 1.6622529029846191,
+      "time_seconds": 1.6660816669464111,
       "accepted_moves": 16,
       "rejected_moves": 0,
       "acceptance_rate": 0.9411764705882353,
-      "iterations_per_second": 10.227083959051026
+      "iterations_per_second": 10.2035814553782
     }
   }
 }
