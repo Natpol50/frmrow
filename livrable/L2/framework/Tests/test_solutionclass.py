@@ -1,5 +1,5 @@
 """
-Tests pytest pour la classe Solution - Mon bon pote Claude
+Tests pytest pour la classe Solution
 
 Vérifie que toutes les opérations maintiennent la cohérence interne.
 

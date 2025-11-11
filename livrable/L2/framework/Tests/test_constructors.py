@@ -1,5 +1,5 @@
 """
-Tests pytest pour les constructeurs - Asha Geyon 2025
+Tests pytest pour les constructeur
 
 Usage:
     pytest test_constructors.py -v

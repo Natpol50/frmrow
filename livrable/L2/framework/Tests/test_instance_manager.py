@@ -6,7 +6,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from filemanagers.instancefilemanager import InstanceFileManager, Instance, Solution
 
 """
-Exemple d'utilisation de l'InstanceFileManager - Mon bon copain Claude
+Exemple d'utilisation de l'InstanceFileManager
 
 Démontre:
 1. Scan et indexation des instances

@@ -1,5 +1,5 @@
 """
-Tests de validation pour l'InstanceFileManager - Mon bon copain Claude
+Tests de validation pour l'InstanceFileManager
 
 Vérifie:
 1. Détection correcte des formats

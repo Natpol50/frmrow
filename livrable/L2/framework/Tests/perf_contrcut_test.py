@@ -13,7 +13,7 @@ from solvermanager.routemanager import RouteEvaluator
 
 #!/usr/bin/env python3
 """
-perf_contrcut_test.py - Mon bon ami Claude
+perf_contrcut_test.py
 
 Script de comparaison des constructeurs définis dans `constructors.py`.
 

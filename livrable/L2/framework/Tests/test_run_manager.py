@@ -1,5 +1,5 @@
 """
-Tests unitaires complets pour le système RunFileManager. - Mon bon copain Claude
+Tests unitaires complets pour le système RunFileManager.
 
 Couvre tous les cas d'usage, edge cases et scénarios d'erreur.
 Utilise pytest avec fixtures pour isoler les tests.
@@ -43,7 +43,7 @@ def simple_config():
     """Configuration simple pour tests de base."""
     return Config(
         instance_name="A-n32-k5",
-        algo_name="simulated_annealing",
+        solver_name="simulated_annealing",
         seed=42,
         parameters={"T_init": 1000, "alpha": 0.95}
     )
@@ -54,7 +54,7 @@ def complex_config():
     """Configuration complexe avec paramètres imbriqués."""
     return Config(
         instance_name="X-n101-k25",
-        algo_name="tabu_search",
+        solver_name="tabu_search",
         seed=123,
         parameters={
             "tabu_tenure": 10,
@@ -264,7 +264,7 @@ class TestConfig:
     def test_creation(self, simple_config):
         """Test création basique."""
         assert simple_config.instance_name == "A-n32-k5"
-        assert simple_config.algo_name == "simulated_annealing"
+        assert simple_config.solver_name == "simulated_annealing"
         assert simple_config.seed == 42
         assert simple_config.parameters["T_init"] == 1000
     
@@ -323,7 +323,7 @@ class TestConfig:
         }
         config2 = Config(
             complex_config.instance_name,
-            complex_config.algo_name,
+            complex_config.solver_name,
             complex_config.seed,
             params_copy
         )
@@ -343,7 +343,7 @@ class TestConfig:
         """Test désérialisation."""
         data = {
             'instance_name': "B-n31-k5",
-            'algo_name': "tabu_search",
+            'solver_name': "tabu_search",
             'seed': 123,
             'parameters': {"tenure": 5}
         }
@@ -544,7 +544,7 @@ class TestRun:
             'hash_config': "def456",
             'config': {
                 'instance_name': "A-n32-k5",
-                'algo_name': "SA",
+                'solver_name': "SA",
                 'seed': 42,
                 'parameters': {}
             },
