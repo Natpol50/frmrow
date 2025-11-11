@@ -118,7 +118,6 @@ class SimulatedAnnealingSolver(AbstractSolver):
     def solve(self) -> Solution:
         """
         Résout par recuit simulé.
-        
         Returns:
             Meilleure solution trouvée
         """
@@ -127,17 +126,14 @@ class SimulatedAnnealingSolver(AbstractSolver):
         while not self._should_stop():
             self.iteration += 1
             
-            # Génère un voisin aléatoire
             neighbor = self._generate_random_neighbor()
-            
-            # Si neighbor est None (invalide), on continue
             if neighbor is None:
                 self.invalid_neighbors += 1
                 continue
             
-            # Calcule le delta de coût
             delta = neighbor.total_cost - self.current_solution.total_cost
-            
+            improved_global = False  # drapeau pour détection amélioration globale
+    
             # Critère d'acceptation de Metropolis
             if delta < 0:
                 # Amélioration → toujours accepter
@@ -145,25 +141,32 @@ class SimulatedAnnealingSolver(AbstractSolver):
                 self._accept_move()
                 if neighbor.total_cost < self.best_cost:
                     self._update_best(self.current_solution)
+                    improved_global = True
             elif random.random() < math.exp(-delta / self.temperature):
                 # Détérioration → accepter selon probabilité
                 self.current_solution = neighbor.copy()
                 self._accept_move()
                 if neighbor.total_cost < self.best_cost:
                     self._update_best(self.current_solution)
+                    improved_global = True
             else:
                 # Rejeter
                 self._reject_move()
+    
+            # Mise à jour du compteur
+            if improved_global:
+                self.iterations_no_improvement = 0
+            else:
+                self.iterations_no_improvement += 1
             
             # Refroidissement
             self.temperature *= self.config.cooling_rate
-            
+    
             # Réchauffage périodique (optionnel)
-            if self.config.reheating:
-                if self.iteration % self.config.reheating_interval == 0:
-                    self.temperature *= self.config.reheating_factor
-                    if self.config.verbose:
-                        print(f"  [Iter {self.iteration:6d}] Reheating: T={self.temperature:.2f}")
+            if self.config.reheating and self.iteration % self.config.reheating_interval == 0:
+                self.temperature *= self.config.reheating_factor
+                if self.config.verbose:
+                    print(f"  [Iter {self.iteration:6d}] Reheating: T={self.temperature:.2f}")
             
             # Arrêt si température trop basse
             if self.temperature < self.config.min_temperature:
@@ -176,8 +179,9 @@ class SimulatedAnnealingSolver(AbstractSolver):
                 print(f"  [Iter {self.iteration:6d}] T={self.temperature:.2f}, "
                       f"Current={self.current_solution.total_cost:.2f}, "
                       f"Best={self.best_cost:.2f}")
-        
+
         return self._finish_solving()
+
     
     def _generate_random_neighbor(self) -> Optional[Solution]:
         """

@@ -174,6 +174,7 @@ def savings_constructor(instance, evaluator: RouteEvaluator,
     - Calcul vectorisé des savings (numpy)
     - Évaluation des options de fusion en parallèle (ThreadPool)
     - Mappage customer->route pour éviter les recherches linéaires
+    
     """
 
     solution = Solution(instance.name)

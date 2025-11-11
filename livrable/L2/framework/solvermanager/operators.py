@@ -9,7 +9,7 @@ Opérateurs disponibles:
 - try_relocate: Déplace un client vers une autre route
 - try_2opt_intra: 2-opt dans UNE route
 - try_exchange: Échange deux clients entre routes
-- try_cross: 2-opt* inter-routes
+- try_cross: 2-opt inter-routes
 
 Usage:
     from operators import try_relocate

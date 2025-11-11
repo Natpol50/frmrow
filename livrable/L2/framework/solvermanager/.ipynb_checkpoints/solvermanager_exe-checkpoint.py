@@ -24,6 +24,7 @@ Usage:
     )
 """
 
+
 from typing import Optional, Dict, Any, List
 from dataclasses import asdict
 import time
@@ -42,6 +43,7 @@ from filemanagers.runfilemanager import RunFileManager, Config, Results, Converg
 # Imports des solvers
 from solvers.localsearch import LocalSearchSolver, LocalSearchConfig
 from solvers.annealing import SimulatedAnnealingSolver, SimulatedAnnealingConfig
+from solvers.alns import ALNSSolver, ALNSConfig
 
 class SolverManager:
     """
@@ -60,6 +62,7 @@ class SolverManager:
     SOLVERS = {
         'local_search': (LocalSearchSolver, LocalSearchConfig),
         'simulated_annealing': (SimulatedAnnealingSolver, SimulatedAnnealingConfig),
+        'alns': (ALNSSolver, ALNSConfig),
     }
     
     def __init__(self, 
