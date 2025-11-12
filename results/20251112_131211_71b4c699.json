@@ -1,0 +1,368 @@
+{
+  "metadata": {
+    "user": "atf",
+    "date": "2025-11-12T13:12:11.377643",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "71b4c69924f6965bf0cea40784ec71408eba2733d99d6536ec37c76fbdd72521",
+  "hash_config": "5240599ff20238f85e401696ffc5c14efeef5db9cef11ae6f80579a06de28a74",
+  "config": {
+    "instance_name": "C1_2_1",
+    "solver_name": "alns",
+    "seed": 43,
+    "parameters": {
+      "max_time": 5,
+      "max_iterations": 50000,
+      "max_iterations_no_improvement": 300,
+      "record_convergence": true,
+      "verbose": true,
+      "seed": null,
+      "name": "alns",
+      "destroy_operators": [
+        "random",
+        "worst",
+        "shaw"
+      ],
+      "repair_operators": [
+        "greedy",
+        "regret2"
+      ],
+      "min_destroy_size": null,
+      "max_destroy_size": null,
+      "destroy_size_ratio": 0.3,
+      "initial_weight": 1.0,
+      "weight_decay": 0.95,
+      "weight_update_interval": 100,
+      "score_new_best": 33.0,
+      "score_better": 9.0,
+      "score_accepted": 3.0,
+      "score_rejected": 0.0,
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "min_temperature": 0.01,
+      "shaw_relatedness_weight_distance": 1.0,
+      "shaw_relatedness_weight_time": 0.5,
+      "shaw_relatedness_weight_demand": 0.1,
+      "shaw_removal_randomness": 6.0
+    }
+  },
+  "results": {
+    "time_seconds": 6.496900796890259,
+    "n_iterations": 5,
+    "cost": 3026.6,
+    "solution": [
+      [
+        177,
+        3,
+        88,
+        8,
+        186,
+        127,
+        98,
+        157
+      ],
+      [],
+      [
+        21,
+        23,
+        182,
+        75,
+        163,
+        194,
+        145,
+        52,
+        15,
+        198
+      ],
+      [
+        20,
+        41,
+        85,
+        80,
+        31,
+        25,
+        172,
+        77,
+        110,
+        162
+      ],
+      [
+        30,
+        120,
+        19,
+        192,
+        196,
+        97,
+        28,
+        149
+      ],
+      [
+        32,
+        171,
+        65,
+        86,
+        115,
+        94,
+        51,
+        174,
+        136,
+        189
+      ],
+      [
+        170,
+        134,
+        50,
+        156,
+        112,
+        168,
+        79,
+        29,
+        87,
+        42,
+        123
+      ],
+      [
+        45,
+        178,
+        27,
+        173,
+        154,
+        24,
+        61,
+        100,
+        64,
+        179,
+        109
+      ],
+      [
+        26,
+        152,
+        40,
+        169,
+        89,
+        105
+      ],
+      [
+        161,
+        104,
+        18,
+        54,
+        185,
+        132,
+        181,
+        117,
+        49,
+        183
+      ],
+      [
+        114,
+        159,
+        38,
+        150,
+        22,
+        151,
+        16,
+        140,
+        187,
+        142,
+        111,
+        63,
+        56
+      ],
+      [
+        57,
+        118,
+        83,
+        143,
+        176,
+        36,
+        33,
+        121,
+        165,
+        188,
+        108
+      ],
+      [
+        133,
+        48,
+        153,
+        14,
+        195,
+        92,
+        59
+      ],
+      [
+        60,
+        82,
+        180,
+        84,
+        191,
+        125,
+        4,
+        72,
+        95,
+        158
+      ],
+      [],
+      [
+        62,
+        131,
+        44,
+        102,
+        146,
+        68,
+        76,
+        96,
+        130,
+        74
+      ],
+      [
+        164,
+        66,
+        147,
+        160,
+        47,
+        91,
+        70
+      ],
+      [],
+      [
+        73,
+        116,
+        12,
+        129,
+        11,
+        6,
+        122,
+        139
+      ],
+      [],
+      [
+        93,
+        55,
+        135,
+        58,
+        7,
+        53
+      ],
+      [
+        101,
+        144,
+        119,
+        166,
+        35,
+        126,
+        71,
+        9,
+        1,
+        99
+      ],
+      [
+        148,
+        103,
+        197,
+        124,
+        141,
+        69,
+        200
+      ],
+      [
+        184,
+        199,
+        37,
+        81,
+        138,
+        137
+      ],
+      [
+        113,
+        155,
+        78,
+        175,
+        13,
+        43,
+        2,
+        90,
+        67,
+        17,
+        107
+      ],
+      [
+        190,
+        5,
+        10,
+        193,
+        46,
+        128,
+        106,
+        167,
+        34,
+        39
+      ]
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 3454.000000000005
+      },
+      {
+        "iteration": 1,
+        "cost": 3144.5000000000005
+      },
+      {
+        "iteration": 1,
+        "cost": 3144.5000000000005
+      },
+      {
+        "iteration": 2,
+        "cost": 3105.9000000000005
+      },
+      {
+        "iteration": 2,
+        "cost": 3105.9000000000005
+      },
+      {
+        "iteration": 3,
+        "cost": 3081.1999999999994
+      },
+      {
+        "iteration": 3,
+        "cost": 3081.1999999999994
+      },
+      {
+        "iteration": 4,
+        "cost": 3028.6
+      },
+      {
+        "iteration": 4,
+        "cost": 3028.6
+      },
+      {
+        "iteration": 5,
+        "cost": 3026.6
+      },
+      {
+        "iteration": 5,
+        "cost": 3026.6
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 3454.0,
+      "n_vehicles": 22,
+      "improvement": 427.4000000000001,
+      "improvement_pct": 12.374059061957155,
+      "constructor": "savings",
+      "solver_name": "ALNSSolver",
+      "final_cost": 3026.6,
+      "iterations": 5,
+      "time_seconds": 6.497059345245361,
+      "accepted_moves": 5,
+      "rejected_moves": 0,
+      "acceptance_rate": 1.0,
+      "iterations_per_second": 0.769578933222931
+    }
+  }
+}

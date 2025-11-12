@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "user": "asha",
+    "date": "2025-11-10T21:00:50.704400",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "2367c04de97bc7a1d3eb58c9603005f09b64a2dcf639ccd5fbe55801da087d04",
+  "hash_config": "1a5c707286799a24cb29f0b8255b7cca1a3349f89d7add42c11295fdc75a3c82",
+  "config": {
+    "instance_name": "C102",
+    "solver_name": "simulated_annealing",
+    "seed": 42,
+    "parameters": {
+      "max_time": null,
+      "max_iterations": 10000000,
+      "max_iterations_no_improvement": null,
+      "record_convergence": true,
+      "verbose": true,
+      "seed": 42,
+      "name": "simulated_annealing",
+      "initial_temperature": 1000000,
+      "cooling_rate": 0.999,
+      "min_temperature": 0.001,
+      "reheating": false,
+      "reheating_interval": 1000,
+      "reheating_factor": 1.5,
+      "validate_neighbors": true
+    }
+  },
+  "results": {
+    "time_seconds": 2.895141363143921,
+    "n_iterations": 20718,
+    "cost": 1018.3000000000002,
+    "solution": [
+      [
+        3,
+        5,
+        8,
+        4,
+        2,
+        1,
+        75
+      ],
+      [
+        13,
+        15,
+        11,
+        9,
+        6,
+        7
+      ],
+      [
+        67,
+        65,
+        10
+      ],
+      [
+        17,
+        18,
+        19,
+        16,
+        14,
+        12
+      ],
+      [
+        20,
+        24,
+        25,
+        27,
+        29,
+        30,
+        28,
+        26,
+        23,
+        21
+      ],
+      [
+        32,
+        33,
+        35,
+        37,
+        38,
+        39,
+        36,
+        34,
+        22
+      ],
+      [
+        43,
+        42,
+        46,
+        50,
+        47
+      ],
+      [
+        41,
+        40,
+        44,
+        45,
+        48,
+        51,
+        31,
+        52,
+        49
+      ],
+      [
+        57,
+        55,
+        54,
+        53,
+        56,
+        58,
+        60,
+        59
+      ],
+      [
+        63,
+        62,
+        74,
+        72,
+        61,
+        64,
+        68,
+        66,
+        69
+      ],
+      [
+        81,
+        78,
+        76,
+        71,
+        70,
+        73,
+        77,
+        79,
+        80,
+        82,
+        83
+      ],
+      [
+        90,
+        87,
+        86,
+        84,
+        85,
+        88,
+        89,
+        91
+      ],
+      [
+        98,
+        96,
+        95,
+        94,
+        92,
+        93,
+        97,
+        100,
+        99
+      ]
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 1059.8
+      },
+      {
+        "iteration": 716,
+        "cost": 1057.8
+      },
+      {
+        "iteration": 2293,
+        "cost": 1053.0
+      },
+      {
+        "iteration": 2333,
+        "cost": 1047.9
+      },
+      {
+        "iteration": 2553,
+        "cost": 1046.5
+      },
+      {
+        "iteration": 4884,
+        "cost": 1045.9
+      },
+      {
+        "iteration": 6129,
+        "cost": 1020.8000000000002
+      },
+      {
+        "iteration": 6826,
+        "cost": 1018.8000000000002
+      },
+      {
+        "iteration": 16883,
+        "cost": 1018.3000000000002
+      },
+      {
+        "iteration": 20718,
+        "cost": 1018.3000000000002
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 1059.8,
+      "n_vehicles": 13,
+      "improvement": 41.49999999999977,
+      "improvement_pct": 3.9158331760709353,
+      "constructor": "savings_parallel",
+      "solver_name": "SimulatedAnnealingSolver",
+      "final_cost": 1018.3000000000002,
+      "iterations": 20718,
+      "time_seconds": 2.8952248096466064,
+      "accepted_moves": 20713,
+      "rejected_moves": 0,
+      "acceptance_rate": 0.999758663963703,
+      "iterations_per_second": 7155.920994794479,
+      "final_temperature": 0.0009999024321907131,
+      "initial_temperature": 1000000,
+      "cooling_rate": 0.999,
+      "invalid_neighbors": 5,
+      "invalid_neighbor_rate": 0.00024133603629693985
+    }
+  }
+}

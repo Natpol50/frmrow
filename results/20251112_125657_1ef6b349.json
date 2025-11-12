@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "user": "atf",
+    "date": "2025-11-12T12:56:57.516959",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "1ef6b349b6baf6df1f9c040ecf23078ae2143b0b2b7373f26b1f2cb0e18f980d",
+  "hash_config": "fed56acbf238f66bcdc48f4ad6969af367fe27fa86105df6719a09dd066a02bf",
+  "config": {
+    "instance_name": "R101",
+    "solver_name": "simulated_annealing",
+    "seed": 50,
+    "parameters": {
+      "max_time": 120,
+      "max_iterations": 5000,
+      "max_iterations_no_improvement": 1000,
+      "record_convergence": true,
+      "verbose": false,
+      "seed": null,
+      "name": "simulated_annealing",
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "min_temperature": 0.001,
+      "reheating": false,
+      "reheating_interval": 1000,
+      "reheating_factor": 1.5,
+      "validate_neighbors": true
+    }
+  },
+  "results": {
+    "time_seconds": 0.5995712280273438,
+    "n_iterations": 3060,
+    "cost": 1949.2000000000003,
+    "solution": [
+      [
+        31,
+        30,
+        20,
+        1
+      ],
+      [
+        2,
+        57,
+        58
+      ],
+      [
+        76,
+        79,
+        3,
+        77
+      ],
+      [
+        21,
+        73,
+        55,
+        4
+      ],
+      [
+        5,
+        98,
+        16,
+        86,
+        17
+      ],
+      [
+        52,
+        18,
+        6
+      ],
+      [
+        62,
+        88,
+        7
+      ],
+      [
+        83,
+        82,
+        8,
+        60
+      ],
+      [
+        11,
+        19,
+        10
+      ],
+      [
+        12,
+        78,
+        34,
+        68
+      ],
+      [
+        92,
+        42,
+        15,
+        41,
+        43,
+        13
+      ],
+      [
+        14,
+        44,
+        38,
+        37,
+        91,
+        100
+      ],
+      [
+        72,
+        23,
+        56
+      ],
+      [
+        39,
+        67,
+        25
+      ],
+      [
+        53,
+        26
+      ],
+      [
+        27,
+        69,
+        51,
+        9,
+        66
+      ],
+      [
+        28,
+        29,
+        24,
+        80
+      ],
+      [
+        63,
+        90,
+        32,
+        70
+      ],
+      [
+        33,
+        81,
+        50
+      ],
+      [
+        65,
+        71,
+        35
+      ],
+      [
+        36,
+        64,
+        49,
+        48
+      ],
+      [
+        40,
+        54
+      ],
+      [
+        45,
+        47,
+        46
+      ],
+      [
+        59,
+        61,
+        85,
+        93
+      ],
+      [
+        95,
+        99,
+        84,
+        96,
+        89
+      ],
+      [
+        75,
+        22,
+        74
+      ],
+      [
+        94
+      ],
+      [
+        87,
+        97
+      ]
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 1954.500000000001
+      },
+      {
+        "iteration": 1,
+        "cost": 1954.5
+      },
+      {
+        "iteration": 866,
+        "cost": 1953.6000000000001
+      },
+      {
+        "iteration": 1844,
+        "cost": 1953.1000000000001
+      },
+      {
+        "iteration": 2058,
+        "cost": 1949.2000000000003
+      },
+      {
+        "iteration": 3060,
+        "cost": 1949.2000000000003
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 1954.5,
+      "n_vehicles": 28,
+      "improvement": 5.299999999999727,
+      "improvement_pct": 0.27116909695572916,
+      "constructor": "savings_parallel",
+      "solver_name": "SimulatedAnnealingSolver",
+      "final_cost": 1949.2000000000003,
+      "iterations": 3060,
+      "time_seconds": 0.5997297763824463,
+      "accepted_moves": 3053,
+      "rejected_moves": 0,
+      "acceptance_rate": 0.9977124183006536,
+      "iterations_per_second": 5102.297935676693,
+      "final_temperature": 434.42386601229254,
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "invalid_neighbors": 7,
+      "invalid_neighbor_rate": 0.0022875816993464053
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "user": "atf",
+    "date": "2025-11-12T13:01:49.569459",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "59d60b627c66d7fc440386e9c81ef425d20b489a4734e90829aeaa6304b29dcc",
+  "hash_config": "fed56acbf238f66bcdc48f4ad6969af367fe27fa86105df6719a09dd066a02bf",
+  "config": {
+    "instance_name": "R101",
+    "solver_name": "simulated_annealing",
+    "seed": 53,
+    "parameters": {
+      "max_time": 120,
+      "max_iterations": 5000,
+      "max_iterations_no_improvement": 1000,
+      "record_convergence": true,
+      "verbose": false,
+      "seed": null,
+      "name": "simulated_annealing",
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "min_temperature": 0.001,
+      "reheating": false,
+      "reheating_interval": 1000,
+      "reheating_factor": 1.5,
+      "validate_neighbors": true
+    }
+  },
+  "results": {
+    "time_seconds": 0.5503139495849609,
+    "n_iterations": 2791,
+    "cost": 1946.3,
+    "solution": [
+      [
+        31,
+        30,
+        20,
+        1
+      ],
+      [
+        2,
+        41,
+        58
+      ],
+      [
+        76,
+        79,
+        3,
+        77
+      ],
+      [
+        21,
+        73,
+        55,
+        4
+      ],
+      [
+        5,
+        98,
+        16,
+        86,
+        17
+      ],
+      [
+        52,
+        18,
+        6
+      ],
+      [
+        62,
+        88,
+        7
+      ],
+      [
+        83,
+        82,
+        8
+      ],
+      [
+        11,
+        19,
+        10
+      ],
+      [
+        12,
+        78,
+        34,
+        68
+      ],
+      [
+        92,
+        42,
+        15,
+        57,
+        37,
+        13
+      ],
+      [
+        14,
+        44,
+        38,
+        43,
+        91,
+        100
+      ],
+      [
+        72,
+        23,
+        56
+      ],
+      [
+        39,
+        67,
+        25
+      ],
+      [
+        53,
+        26
+      ],
+      [
+        27,
+        69,
+        51,
+        9,
+        35
+      ],
+      [
+        28,
+        29,
+        24,
+        80
+      ],
+      [
+        63,
+        90,
+        32,
+        70
+      ],
+      [
+        33,
+        81,
+        50
+      ],
+      [
+        65,
+        71,
+        66
+      ],
+      [
+        36,
+        64,
+        49,
+        48
+      ],
+      [
+        40,
+        54
+      ],
+      [
+        45,
+        47,
+        46
+      ],
+      [
+        59,
+        61,
+        85,
+        93
+      ],
+      [
+        99,
+        84,
+        60,
+        89
+      ],
+      [
+        75,
+        22,
+        74
+      ],
+      [
+        94,
+        96
+      ],
+      [
+        95,
+        87,
+        97
+      ]
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 1954.500000000001
+      },
+      {
+        "iteration": 1,
+        "cost": 1954.5
+      },
+      {
+        "iteration": 911,
+        "cost": 1952.7
+      },
+      {
+        "iteration": 1142,
+        "cost": 1948.5
+      },
+      {
+        "iteration": 1788,
+        "cost": 1946.3
+      },
+      {
+        "iteration": 2791,
+        "cost": 1946.3
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 1954.5,
+      "n_vehicles": 28,
+      "improvement": 8.200000000000045,
+      "improvement_pct": 0.41954464057303886,
+      "constructor": "savings_parallel",
+      "solver_name": "SimulatedAnnealingSolver",
+      "final_cost": 1946.3,
+      "iterations": 2791,
+      "time_seconds": 0.55047607421875,
+      "accepted_moves": 2780,
+      "rejected_moves": 0,
+      "acceptance_rate": 0.9960587603009674,
+      "iterations_per_second": 5070.156780130835,
+      "final_temperature": 497.977474296577,
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "invalid_neighbors": 11,
+      "invalid_neighbor_rate": 0.003941239699032604
+    }
+  }
+}

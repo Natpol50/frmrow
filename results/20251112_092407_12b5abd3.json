@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "user": "atf",
+    "date": "2025-11-12T09:24:07.202394",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "12b5abd3335c81c730fd536a551b796991f5d70a3fcc26bd350a0f202bc057dd",
+  "hash_config": "aede70d506c8f28eca4a40ebd56f5df34c0643a34923ddcc58ba9a404fd129bd",
+  "config": {
+    "instance_name": "C201",
+    "solver_name": "simulated_annealing",
+    "seed": 42,
+    "parameters": {
+      "max_time": null,
+      "max_iterations": 5000,
+      "max_iterations_no_improvement": 10000,
+      "record_convergence": true,
+      "verbose": true,
+      "seed": 42,
+      "name": "simulated_annealing",
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "min_temperature": 0.001,
+      "reheating": false,
+      "reheating_interval": 1000,
+      "reheating_factor": 1.5,
+      "validate_neighbors": true
+    }
+  },
+  "results": {
+    "time_seconds": 0.5554499626159668,
+    "n_iterations": 5000,
+    "cost": 820.5999999999999,
+    "solution": [
+      [
+        20,
+        24,
+        29,
+        33,
+        36,
+        34,
+        51,
+        50,
+        52,
+        47,
+        43,
+        21
+      ],
+      [
+        22,
+        27,
+        30,
+        6,
+        32,
+        31,
+        35,
+        37,
+        38,
+        39,
+        28,
+        26,
+        23,
+        18,
+        19,
+        16,
+        14,
+        12,
+        15,
+        17,
+        13,
+        25,
+        9,
+        11,
+        10,
+        8
+      ],
+      [
+        61,
+        64,
+        68,
+        45,
+        42,
+        41,
+        48
+      ],
+      [
+        63,
+        62,
+        74,
+        72,
+        65,
+        49,
+        55,
+        54,
+        53,
+        56,
+        58,
+        60,
+        59,
+        57,
+        40,
+        44,
+        46,
+        96
+      ],
+      [
+        67,
+        66,
+        69,
+        7,
+        89,
+        91,
+        86
+      ],
+      [
+        93,
+        5,
+        75,
+        2,
+        1,
+        99,
+        100,
+        97,
+        92,
+        94,
+        95,
+        98,
+        3,
+        4,
+        88,
+        84,
+        83,
+        82,
+        85,
+        76,
+        71,
+        70,
+        73,
+        80,
+        79,
+        81,
+        78,
+        77,
+        87,
+        90
+      ]
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 873.500000000002
+      },
+      {
+        "iteration": 1,
+        "cost": 873.5
+      },
+      {
+        "iteration": 67,
+        "cost": 864.6
+      },
+      {
+        "iteration": 1854,
+        "cost": 859.3
+      },
+      {
+        "iteration": 2474,
+        "cost": 858.8
+      },
+      {
+        "iteration": 3961,
+        "cost": 858.4
+      },
+      {
+        "iteration": 4527,
+        "cost": 820.5999999999999
+      },
+      {
+        "iteration": 5000,
+        "cost": 820.5999999999999
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 873.5,
+      "n_vehicles": 6,
+      "improvement": 52.90000000000009,
+      "improvement_pct": 6.056096164854046,
+      "constructor": "savings_parallel",
+      "solver_name": "SimulatedAnnealingSolver",
+      "final_cost": 820.5999999999999,
+      "iterations": 5000,
+      "time_seconds": 0.5555055141448975,
+      "accepted_moves": 4970,
+      "rejected_moves": 0,
+      "acceptance_rate": 0.994,
+      "iterations_per_second": 9000.810743880042,
+      "final_temperature": 166.54757467353025,
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "invalid_neighbors": 30,
+      "invalid_neighbor_rate": 0.006
+    }
+  }
+}

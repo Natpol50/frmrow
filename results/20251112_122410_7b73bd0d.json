@@ -1,0 +1,2327 @@
+{
+  "metadata": {
+    "user": "atf",
+    "date": "2025-11-12T12:24:10.654465",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "7b73bd0dcce33e96e9b0b6415b8212ca1936864a2d18fd480831b951e17a1787",
+  "hash_config": "003372e496a591f574e447cc05efb975022aaec4be3761da0977d1dcb81f1e1d",
+  "config": {
+    "instance_name": "C101",
+    "solver_name": "alns",
+    "seed": 50,
+    "parameters": {
+      "max_time": 120,
+      "max_iterations": 5000,
+      "max_iterations_no_improvement": 300,
+      "record_convergence": true,
+      "verbose": false,
+      "seed": null,
+      "name": "alns",
+      "destroy_operators": [
+        "random",
+        "worst",
+        "shaw"
+      ],
+      "repair_operators": [
+        "greedy",
+        "regret2"
+      ],
+      "min_destroy_size": null,
+      "max_destroy_size": null,
+      "destroy_size_ratio": 0.3,
+      "initial_weight": 1.0,
+      "weight_decay": 0.95,
+      "weight_update_interval": 100,
+      "score_new_best": 33.0,
+      "score_better": 9.0,
+      "score_accepted": 3.0,
+      "score_rejected": 0.0,
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "min_temperature": 0.01,
+      "shaw_relatedness_weight_distance": 1.0,
+      "shaw_relatedness_weight_time": 0.5,
+      "shaw_relatedness_weight_demand": 0.1,
+      "shaw_removal_randomness": 6.0
+    }
+  },
+  "results": {
+    "time_seconds": 120.01600694656372,
+    "n_iterations": 520,
+    "cost": 827.3,
+    "solution": [
+      [
+        20,
+        24,
+        25,
+        27,
+        29,
+        30,
+        28,
+        26,
+        23,
+        22,
+        21
+      ],
+      [
+        81,
+        78,
+        76,
+        71,
+        70,
+        73,
+        77,
+        79,
+        80
+      ],
+      [
+        13,
+        17,
+        18,
+        19,
+        15,
+        16,
+        14,
+        12
+      ],
+      [
+        32,
+        33,
+        31,
+        35,
+        37,
+        38,
+        39,
+        36,
+        34
+      ],
+      [],
+      [
+        98,
+        96,
+        95,
+        94,
+        92,
+        93,
+        97,
+        100,
+        99
+      ],
+      [
+        43,
+        42,
+        41,
+        40,
+        44,
+        46,
+        45,
+        48,
+        51,
+        50,
+        52,
+        49,
+        47
+      ],
+      [
+        57,
+        55,
+        54,
+        53,
+        56,
+        58,
+        60,
+        59
+      ],
+      [
+        5,
+        3,
+        7,
+        8,
+        10,
+        11,
+        9,
+        6,
+        4,
+        2,
+        1,
+        75
+      ],
+      [],
+      [
+        67,
+        65,
+        63,
+        62,
+        74,
+        72,
+        61,
+        64,
+        68,
+        66,
+        69
+      ],
+      [
+        90,
+        87,
+        86,
+        83,
+        82,
+        84,
+        85,
+        88,
+        89,
+        91
+      ],
+      []
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 1010.3999999999996
+      },
+      {
+        "iteration": 1,
+        "cost": 1010.3999999999996
+      },
+      {
+        "iteration": 2,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 2,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 3,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 4,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 5,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 6,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 7,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 8,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 9,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 10,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 11,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 12,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 13,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 14,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 15,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 16,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 17,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 18,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 19,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 20,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 21,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 22,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 23,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 24,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 25,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 26,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 27,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 28,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 29,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 30,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 31,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 32,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 33,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 34,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 35,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 36,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 37,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 38,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 39,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 40,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 41,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 42,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 43,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 44,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 45,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 46,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 47,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 48,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 49,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 50,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 51,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 52,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 53,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 54,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 55,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 56,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 57,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 58,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 59,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 60,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 61,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 62,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 63,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 64,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 65,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 66,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 67,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 68,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 69,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 70,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 71,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 72,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 73,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 74,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 75,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 76,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 77,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 78,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 79,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 80,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 81,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 82,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 83,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 84,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 85,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 86,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 87,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 88,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 89,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 90,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 91,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 92,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 93,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 94,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 95,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 96,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 97,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 98,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 99,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 100,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 101,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 102,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 103,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 104,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 105,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 106,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 107,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 108,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 109,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 110,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 111,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 112,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 113,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 114,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 115,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 116,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 117,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 118,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 119,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 120,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 121,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 122,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 123,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 124,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 125,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 126,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 127,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 128,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 129,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 130,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 131,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 132,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 133,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 134,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 135,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 136,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 137,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 138,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 139,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 140,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 141,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 142,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 143,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 144,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 145,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 146,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 147,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 148,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 149,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 150,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 151,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 152,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 153,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 154,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 155,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 156,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 157,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 158,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 159,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 160,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 161,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 162,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 163,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 164,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 165,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 166,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 167,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 168,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 169,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 170,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 171,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 172,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 173,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 174,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 175,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 176,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 177,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 178,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 179,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 180,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 181,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 182,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 183,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 184,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 185,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 186,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 187,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 188,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 189,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 190,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 191,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 192,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 193,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 194,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 195,
+        "cost": 947.9000000000001
+      },
+      {
+        "iteration": 196,
+        "cost": 944.5999999999998
+      },
+      {
+        "iteration": 196,
+        "cost": 944.5999999999998
+      },
+      {
+        "iteration": 197,
+        "cost": 940.1
+      },
+      {
+        "iteration": 197,
+        "cost": 940.1
+      },
+      {
+        "iteration": 198,
+        "cost": 940.1
+      },
+      {
+        "iteration": 199,
+        "cost": 940.1
+      },
+      {
+        "iteration": 200,
+        "cost": 940.1
+      },
+      {
+        "iteration": 201,
+        "cost": 940.1
+      },
+      {
+        "iteration": 202,
+        "cost": 940.1
+      },
+      {
+        "iteration": 203,
+        "cost": 940.1
+      },
+      {
+        "iteration": 204,
+        "cost": 940.1
+      },
+      {
+        "iteration": 205,
+        "cost": 940.1
+      },
+      {
+        "iteration": 206,
+        "cost": 940.1
+      },
+      {
+        "iteration": 207,
+        "cost": 940.1
+      },
+      {
+        "iteration": 208,
+        "cost": 940.1
+      },
+      {
+        "iteration": 209,
+        "cost": 940.1
+      },
+      {
+        "iteration": 210,
+        "cost": 940.1
+      },
+      {
+        "iteration": 211,
+        "cost": 940.1
+      },
+      {
+        "iteration": 212,
+        "cost": 940.1
+      },
+      {
+        "iteration": 213,
+        "cost": 940.1
+      },
+      {
+        "iteration": 214,
+        "cost": 940.1
+      },
+      {
+        "iteration": 215,
+        "cost": 940.1
+      },
+      {
+        "iteration": 216,
+        "cost": 940.1
+      },
+      {
+        "iteration": 217,
+        "cost": 940.1
+      },
+      {
+        "iteration": 218,
+        "cost": 940.1
+      },
+      {
+        "iteration": 219,
+        "cost": 940.1
+      },
+      {
+        "iteration": 220,
+        "cost": 940.1
+      },
+      {
+        "iteration": 221,
+        "cost": 940.1
+      },
+      {
+        "iteration": 222,
+        "cost": 935.6
+      },
+      {
+        "iteration": 222,
+        "cost": 935.6
+      },
+      {
+        "iteration": 223,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 223,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 224,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 225,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 226,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 227,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 228,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 229,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 230,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 231,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 232,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 233,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 234,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 235,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 236,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 237,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 238,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 239,
+        "cost": 933.2999999999998
+      },
+      {
+        "iteration": 240,
+        "cost": 931.8000000000001
+      },
+      {
+        "iteration": 240,
+        "cost": 931.8000000000001
+      },
+      {
+        "iteration": 241,
+        "cost": 895.0
+      },
+      {
+        "iteration": 241,
+        "cost": 895.0
+      },
+      {
+        "iteration": 242,
+        "cost": 895.0
+      },
+      {
+        "iteration": 243,
+        "cost": 895.0
+      },
+      {
+        "iteration": 244,
+        "cost": 886.4
+      },
+      {
+        "iteration": 244,
+        "cost": 886.4
+      },
+      {
+        "iteration": 245,
+        "cost": 862.4
+      },
+      {
+        "iteration": 245,
+        "cost": 862.4
+      },
+      {
+        "iteration": 246,
+        "cost": 862.4
+      },
+      {
+        "iteration": 247,
+        "cost": 862.4
+      },
+      {
+        "iteration": 248,
+        "cost": 862.4
+      },
+      {
+        "iteration": 249,
+        "cost": 860.1
+      },
+      {
+        "iteration": 249,
+        "cost": 860.1
+      },
+      {
+        "iteration": 250,
+        "cost": 827.3
+      },
+      {
+        "iteration": 250,
+        "cost": 827.3
+      },
+      {
+        "iteration": 251,
+        "cost": 827.3
+      },
+      {
+        "iteration": 252,
+        "cost": 827.3
+      },
+      {
+        "iteration": 253,
+        "cost": 827.3
+      },
+      {
+        "iteration": 254,
+        "cost": 827.3
+      },
+      {
+        "iteration": 255,
+        "cost": 827.3
+      },
+      {
+        "iteration": 256,
+        "cost": 827.3
+      },
+      {
+        "iteration": 257,
+        "cost": 827.3
+      },
+      {
+        "iteration": 258,
+        "cost": 827.3
+      },
+      {
+        "iteration": 259,
+        "cost": 827.3
+      },
+      {
+        "iteration": 260,
+        "cost": 827.3
+      },
+      {
+        "iteration": 261,
+        "cost": 827.3
+      },
+      {
+        "iteration": 262,
+        "cost": 827.3
+      },
+      {
+        "iteration": 263,
+        "cost": 827.3
+      },
+      {
+        "iteration": 264,
+        "cost": 827.3
+      },
+      {
+        "iteration": 265,
+        "cost": 827.3
+      },
+      {
+        "iteration": 266,
+        "cost": 827.3
+      },
+      {
+        "iteration": 267,
+        "cost": 827.3
+      },
+      {
+        "iteration": 268,
+        "cost": 827.3
+      },
+      {
+        "iteration": 269,
+        "cost": 827.3
+      },
+      {
+        "iteration": 270,
+        "cost": 827.3
+      },
+      {
+        "iteration": 271,
+        "cost": 827.3
+      },
+      {
+        "iteration": 272,
+        "cost": 827.3
+      },
+      {
+        "iteration": 273,
+        "cost": 827.3
+      },
+      {
+        "iteration": 274,
+        "cost": 827.3
+      },
+      {
+        "iteration": 275,
+        "cost": 827.3
+      },
+      {
+        "iteration": 276,
+        "cost": 827.3
+      },
+      {
+        "iteration": 277,
+        "cost": 827.3
+      },
+      {
+        "iteration": 278,
+        "cost": 827.3
+      },
+      {
+        "iteration": 279,
+        "cost": 827.3
+      },
+      {
+        "iteration": 280,
+        "cost": 827.3
+      },
+      {
+        "iteration": 281,
+        "cost": 827.3
+      },
+      {
+        "iteration": 282,
+        "cost": 827.3
+      },
+      {
+        "iteration": 283,
+        "cost": 827.3
+      },
+      {
+        "iteration": 284,
+        "cost": 827.3
+      },
+      {
+        "iteration": 285,
+        "cost": 827.3
+      },
+      {
+        "iteration": 286,
+        "cost": 827.3
+      },
+      {
+        "iteration": 287,
+        "cost": 827.3
+      },
+      {
+        "iteration": 288,
+        "cost": 827.3
+      },
+      {
+        "iteration": 289,
+        "cost": 827.3
+      },
+      {
+        "iteration": 290,
+        "cost": 827.3
+      },
+      {
+        "iteration": 291,
+        "cost": 827.3
+      },
+      {
+        "iteration": 292,
+        "cost": 827.3
+      },
+      {
+        "iteration": 293,
+        "cost": 827.3
+      },
+      {
+        "iteration": 294,
+        "cost": 827.3
+      },
+      {
+        "iteration": 295,
+        "cost": 827.3
+      },
+      {
+        "iteration": 296,
+        "cost": 827.3
+      },
+      {
+        "iteration": 297,
+        "cost": 827.3
+      },
+      {
+        "iteration": 298,
+        "cost": 827.3
+      },
+      {
+        "iteration": 299,
+        "cost": 827.3
+      },
+      {
+        "iteration": 300,
+        "cost": 827.3
+      },
+      {
+        "iteration": 301,
+        "cost": 827.3
+      },
+      {
+        "iteration": 302,
+        "cost": 827.3
+      },
+      {
+        "iteration": 303,
+        "cost": 827.3
+      },
+      {
+        "iteration": 304,
+        "cost": 827.3
+      },
+      {
+        "iteration": 305,
+        "cost": 827.3
+      },
+      {
+        "iteration": 306,
+        "cost": 827.3
+      },
+      {
+        "iteration": 307,
+        "cost": 827.3
+      },
+      {
+        "iteration": 308,
+        "cost": 827.3
+      },
+      {
+        "iteration": 309,
+        "cost": 827.3
+      },
+      {
+        "iteration": 310,
+        "cost": 827.3
+      },
+      {
+        "iteration": 311,
+        "cost": 827.3
+      },
+      {
+        "iteration": 312,
+        "cost": 827.3
+      },
+      {
+        "iteration": 313,
+        "cost": 827.3
+      },
+      {
+        "iteration": 314,
+        "cost": 827.3
+      },
+      {
+        "iteration": 315,
+        "cost": 827.3
+      },
+      {
+        "iteration": 316,
+        "cost": 827.3
+      },
+      {
+        "iteration": 317,
+        "cost": 827.3
+      },
+      {
+        "iteration": 318,
+        "cost": 827.3
+      },
+      {
+        "iteration": 319,
+        "cost": 827.3
+      },
+      {
+        "iteration": 320,
+        "cost": 827.3
+      },
+      {
+        "iteration": 321,
+        "cost": 827.3
+      },
+      {
+        "iteration": 322,
+        "cost": 827.3
+      },
+      {
+        "iteration": 323,
+        "cost": 827.3
+      },
+      {
+        "iteration": 324,
+        "cost": 827.3
+      },
+      {
+        "iteration": 325,
+        "cost": 827.3
+      },
+      {
+        "iteration": 326,
+        "cost": 827.3
+      },
+      {
+        "iteration": 327,
+        "cost": 827.3
+      },
+      {
+        "iteration": 328,
+        "cost": 827.3
+      },
+      {
+        "iteration": 329,
+        "cost": 827.3
+      },
+      {
+        "iteration": 330,
+        "cost": 827.3
+      },
+      {
+        "iteration": 331,
+        "cost": 827.3
+      },
+      {
+        "iteration": 332,
+        "cost": 827.3
+      },
+      {
+        "iteration": 333,
+        "cost": 827.3
+      },
+      {
+        "iteration": 334,
+        "cost": 827.3
+      },
+      {
+        "iteration": 335,
+        "cost": 827.3
+      },
+      {
+        "iteration": 336,
+        "cost": 827.3
+      },
+      {
+        "iteration": 337,
+        "cost": 827.3
+      },
+      {
+        "iteration": 338,
+        "cost": 827.3
+      },
+      {
+        "iteration": 339,
+        "cost": 827.3
+      },
+      {
+        "iteration": 340,
+        "cost": 827.3
+      },
+      {
+        "iteration": 341,
+        "cost": 827.3
+      },
+      {
+        "iteration": 342,
+        "cost": 827.3
+      },
+      {
+        "iteration": 343,
+        "cost": 827.3
+      },
+      {
+        "iteration": 344,
+        "cost": 827.3
+      },
+      {
+        "iteration": 345,
+        "cost": 827.3
+      },
+      {
+        "iteration": 346,
+        "cost": 827.3
+      },
+      {
+        "iteration": 347,
+        "cost": 827.3
+      },
+      {
+        "iteration": 348,
+        "cost": 827.3
+      },
+      {
+        "iteration": 349,
+        "cost": 827.3
+      },
+      {
+        "iteration": 350,
+        "cost": 827.3
+      },
+      {
+        "iteration": 351,
+        "cost": 827.3
+      },
+      {
+        "iteration": 352,
+        "cost": 827.3
+      },
+      {
+        "iteration": 353,
+        "cost": 827.3
+      },
+      {
+        "iteration": 354,
+        "cost": 827.3
+      },
+      {
+        "iteration": 355,
+        "cost": 827.3
+      },
+      {
+        "iteration": 356,
+        "cost": 827.3
+      },
+      {
+        "iteration": 357,
+        "cost": 827.3
+      },
+      {
+        "iteration": 358,
+        "cost": 827.3
+      },
+      {
+        "iteration": 359,
+        "cost": 827.3
+      },
+      {
+        "iteration": 360,
+        "cost": 827.3
+      },
+      {
+        "iteration": 361,
+        "cost": 827.3
+      },
+      {
+        "iteration": 362,
+        "cost": 827.3
+      },
+      {
+        "iteration": 363,
+        "cost": 827.3
+      },
+      {
+        "iteration": 364,
+        "cost": 827.3
+      },
+      {
+        "iteration": 365,
+        "cost": 827.3
+      },
+      {
+        "iteration": 366,
+        "cost": 827.3
+      },
+      {
+        "iteration": 367,
+        "cost": 827.3
+      },
+      {
+        "iteration": 368,
+        "cost": 827.3
+      },
+      {
+        "iteration": 369,
+        "cost": 827.3
+      },
+      {
+        "iteration": 370,
+        "cost": 827.3
+      },
+      {
+        "iteration": 371,
+        "cost": 827.3
+      },
+      {
+        "iteration": 372,
+        "cost": 827.3
+      },
+      {
+        "iteration": 373,
+        "cost": 827.3
+      },
+      {
+        "iteration": 374,
+        "cost": 827.3
+      },
+      {
+        "iteration": 375,
+        "cost": 827.3
+      },
+      {
+        "iteration": 376,
+        "cost": 827.3
+      },
+      {
+        "iteration": 377,
+        "cost": 827.3
+      },
+      {
+        "iteration": 378,
+        "cost": 827.3
+      },
+      {
+        "iteration": 379,
+        "cost": 827.3
+      },
+      {
+        "iteration": 380,
+        "cost": 827.3
+      },
+      {
+        "iteration": 381,
+        "cost": 827.3
+      },
+      {
+        "iteration": 382,
+        "cost": 827.3
+      },
+      {
+        "iteration": 383,
+        "cost": 827.3
+      },
+      {
+        "iteration": 384,
+        "cost": 827.3
+      },
+      {
+        "iteration": 385,
+        "cost": 827.3
+      },
+      {
+        "iteration": 386,
+        "cost": 827.3
+      },
+      {
+        "iteration": 387,
+        "cost": 827.3
+      },
+      {
+        "iteration": 388,
+        "cost": 827.3
+      },
+      {
+        "iteration": 389,
+        "cost": 827.3
+      },
+      {
+        "iteration": 390,
+        "cost": 827.3
+      },
+      {
+        "iteration": 391,
+        "cost": 827.3
+      },
+      {
+        "iteration": 392,
+        "cost": 827.3
+      },
+      {
+        "iteration": 393,
+        "cost": 827.3
+      },
+      {
+        "iteration": 394,
+        "cost": 827.3
+      },
+      {
+        "iteration": 395,
+        "cost": 827.3
+      },
+      {
+        "iteration": 396,
+        "cost": 827.3
+      },
+      {
+        "iteration": 397,
+        "cost": 827.3
+      },
+      {
+        "iteration": 398,
+        "cost": 827.3
+      },
+      {
+        "iteration": 399,
+        "cost": 827.3
+      },
+      {
+        "iteration": 400,
+        "cost": 827.3
+      },
+      {
+        "iteration": 401,
+        "cost": 827.3
+      },
+      {
+        "iteration": 402,
+        "cost": 827.3
+      },
+      {
+        "iteration": 403,
+        "cost": 827.3
+      },
+      {
+        "iteration": 404,
+        "cost": 827.3
+      },
+      {
+        "iteration": 405,
+        "cost": 827.3
+      },
+      {
+        "iteration": 406,
+        "cost": 827.3
+      },
+      {
+        "iteration": 407,
+        "cost": 827.3
+      },
+      {
+        "iteration": 408,
+        "cost": 827.3
+      },
+      {
+        "iteration": 409,
+        "cost": 827.3
+      },
+      {
+        "iteration": 410,
+        "cost": 827.3
+      },
+      {
+        "iteration": 411,
+        "cost": 827.3
+      },
+      {
+        "iteration": 412,
+        "cost": 827.3
+      },
+      {
+        "iteration": 413,
+        "cost": 827.3
+      },
+      {
+        "iteration": 414,
+        "cost": 827.3
+      },
+      {
+        "iteration": 415,
+        "cost": 827.3
+      },
+      {
+        "iteration": 416,
+        "cost": 827.3
+      },
+      {
+        "iteration": 417,
+        "cost": 827.3
+      },
+      {
+        "iteration": 418,
+        "cost": 827.3
+      },
+      {
+        "iteration": 419,
+        "cost": 827.3
+      },
+      {
+        "iteration": 420,
+        "cost": 827.3
+      },
+      {
+        "iteration": 421,
+        "cost": 827.3
+      },
+      {
+        "iteration": 422,
+        "cost": 827.3
+      },
+      {
+        "iteration": 423,
+        "cost": 827.3
+      },
+      {
+        "iteration": 424,
+        "cost": 827.3
+      },
+      {
+        "iteration": 425,
+        "cost": 827.3
+      },
+      {
+        "iteration": 426,
+        "cost": 827.3
+      },
+      {
+        "iteration": 427,
+        "cost": 827.3
+      },
+      {
+        "iteration": 428,
+        "cost": 827.3
+      },
+      {
+        "iteration": 429,
+        "cost": 827.3
+      },
+      {
+        "iteration": 430,
+        "cost": 827.3
+      },
+      {
+        "iteration": 431,
+        "cost": 827.3
+      },
+      {
+        "iteration": 432,
+        "cost": 827.3
+      },
+      {
+        "iteration": 433,
+        "cost": 827.3
+      },
+      {
+        "iteration": 434,
+        "cost": 827.3
+      },
+      {
+        "iteration": 435,
+        "cost": 827.3
+      },
+      {
+        "iteration": 436,
+        "cost": 827.3
+      },
+      {
+        "iteration": 437,
+        "cost": 827.3
+      },
+      {
+        "iteration": 438,
+        "cost": 827.3
+      },
+      {
+        "iteration": 439,
+        "cost": 827.3
+      },
+      {
+        "iteration": 440,
+        "cost": 827.3
+      },
+      {
+        "iteration": 441,
+        "cost": 827.3
+      },
+      {
+        "iteration": 442,
+        "cost": 827.3
+      },
+      {
+        "iteration": 443,
+        "cost": 827.3
+      },
+      {
+        "iteration": 444,
+        "cost": 827.3
+      },
+      {
+        "iteration": 445,
+        "cost": 827.3
+      },
+      {
+        "iteration": 446,
+        "cost": 827.3
+      },
+      {
+        "iteration": 447,
+        "cost": 827.3
+      },
+      {
+        "iteration": 448,
+        "cost": 827.3
+      },
+      {
+        "iteration": 449,
+        "cost": 827.3
+      },
+      {
+        "iteration": 450,
+        "cost": 827.3
+      },
+      {
+        "iteration": 451,
+        "cost": 827.3
+      },
+      {
+        "iteration": 452,
+        "cost": 827.3
+      },
+      {
+        "iteration": 453,
+        "cost": 827.3
+      },
+      {
+        "iteration": 454,
+        "cost": 827.3
+      },
+      {
+        "iteration": 455,
+        "cost": 827.3
+      },
+      {
+        "iteration": 456,
+        "cost": 827.3
+      },
+      {
+        "iteration": 457,
+        "cost": 827.3
+      },
+      {
+        "iteration": 458,
+        "cost": 827.3
+      },
+      {
+        "iteration": 459,
+        "cost": 827.3
+      },
+      {
+        "iteration": 460,
+        "cost": 827.3
+      },
+      {
+        "iteration": 461,
+        "cost": 827.3
+      },
+      {
+        "iteration": 462,
+        "cost": 827.3
+      },
+      {
+        "iteration": 463,
+        "cost": 827.3
+      },
+      {
+        "iteration": 464,
+        "cost": 827.3
+      },
+      {
+        "iteration": 465,
+        "cost": 827.3
+      },
+      {
+        "iteration": 466,
+        "cost": 827.3
+      },
+      {
+        "iteration": 467,
+        "cost": 827.3
+      },
+      {
+        "iteration": 468,
+        "cost": 827.3
+      },
+      {
+        "iteration": 469,
+        "cost": 827.3
+      },
+      {
+        "iteration": 470,
+        "cost": 827.3
+      },
+      {
+        "iteration": 471,
+        "cost": 827.3
+      },
+      {
+        "iteration": 472,
+        "cost": 827.3
+      },
+      {
+        "iteration": 473,
+        "cost": 827.3
+      },
+      {
+        "iteration": 474,
+        "cost": 827.3
+      },
+      {
+        "iteration": 475,
+        "cost": 827.3
+      },
+      {
+        "iteration": 476,
+        "cost": 827.3
+      },
+      {
+        "iteration": 477,
+        "cost": 827.3
+      },
+      {
+        "iteration": 478,
+        "cost": 827.3
+      },
+      {
+        "iteration": 479,
+        "cost": 827.3
+      },
+      {
+        "iteration": 480,
+        "cost": 827.3
+      },
+      {
+        "iteration": 481,
+        "cost": 827.3
+      },
+      {
+        "iteration": 482,
+        "cost": 827.3
+      },
+      {
+        "iteration": 483,
+        "cost": 827.3
+      },
+      {
+        "iteration": 484,
+        "cost": 827.3
+      },
+      {
+        "iteration": 485,
+        "cost": 827.3
+      },
+      {
+        "iteration": 486,
+        "cost": 827.3
+      },
+      {
+        "iteration": 487,
+        "cost": 827.3
+      },
+      {
+        "iteration": 488,
+        "cost": 827.3
+      },
+      {
+        "iteration": 489,
+        "cost": 827.3
+      },
+      {
+        "iteration": 490,
+        "cost": 827.3
+      },
+      {
+        "iteration": 491,
+        "cost": 827.3
+      },
+      {
+        "iteration": 492,
+        "cost": 827.3
+      },
+      {
+        "iteration": 493,
+        "cost": 827.3
+      },
+      {
+        "iteration": 494,
+        "cost": 827.3
+      },
+      {
+        "iteration": 495,
+        "cost": 827.3
+      },
+      {
+        "iteration": 496,
+        "cost": 827.3
+      },
+      {
+        "iteration": 497,
+        "cost": 827.3
+      },
+      {
+        "iteration": 498,
+        "cost": 827.3
+      },
+      {
+        "iteration": 499,
+        "cost": 827.3
+      },
+      {
+        "iteration": 500,
+        "cost": 827.3
+      },
+      {
+        "iteration": 501,
+        "cost": 827.3
+      },
+      {
+        "iteration": 502,
+        "cost": 827.3
+      },
+      {
+        "iteration": 503,
+        "cost": 827.3
+      },
+      {
+        "iteration": 504,
+        "cost": 827.3
+      },
+      {
+        "iteration": 505,
+        "cost": 827.3
+      },
+      {
+        "iteration": 506,
+        "cost": 827.3
+      },
+      {
+        "iteration": 507,
+        "cost": 827.3
+      },
+      {
+        "iteration": 508,
+        "cost": 827.3
+      },
+      {
+        "iteration": 509,
+        "cost": 827.3
+      },
+      {
+        "iteration": 510,
+        "cost": 827.3
+      },
+      {
+        "iteration": 511,
+        "cost": 827.3
+      },
+      {
+        "iteration": 512,
+        "cost": 827.3
+      },
+      {
+        "iteration": 513,
+        "cost": 827.3
+      },
+      {
+        "iteration": 514,
+        "cost": 827.3
+      },
+      {
+        "iteration": 515,
+        "cost": 827.3
+      },
+      {
+        "iteration": 516,
+        "cost": 827.3
+      },
+      {
+        "iteration": 517,
+        "cost": 827.3
+      },
+      {
+        "iteration": 518,
+        "cost": 827.3
+      },
+      {
+        "iteration": 519,
+        "cost": 827.3
+      },
+      {
+        "iteration": 520,
+        "cost": 827.3
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 1010.4000000000001,
+      "n_vehicles": 10,
+      "improvement": 183.10000000000014,
+      "improvement_pct": 18.121536025336514,
+      "constructor": "savings",
+      "solver_name": "ALNSSolver",
+      "final_cost": 827.3,
+      "iterations": 520,
+      "time_seconds": 120.01626515388489,
+      "accepted_moves": 504,
+      "rejected_moves": 16,
+      "acceptance_rate": 0.9692307692307692,
+      "iterations_per_second": 4.3327460601548955
+    }
+  }
+}

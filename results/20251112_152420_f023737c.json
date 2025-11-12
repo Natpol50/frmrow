@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "user": "atf",
+    "date": "2025-11-12T15:24:20.056310",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "f023737c766a8462b129e55914abd9f76ab8ad70ca8a27cb40f374fe61f95f9f",
+  "hash_config": "ce88de05de6ba0e0832ad0312f0bf91660c9837091f1f363122157671c21b8eb",
+  "config": {
+    "instance_name": "C1_2_1",
+    "solver_name": "simulated_annealing",
+    "seed": 42,
+    "parameters": {
+      "max_time": null,
+      "max_iterations": 5000,
+      "max_iterations_no_improvement": 10000,
+      "record_convergence": true,
+      "verbose": true,
+      "seed": 42,
+      "name": "simulated_annealing",
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "min_temperature": 0.001,
+      "reheating": false,
+      "reheating_interval": 1000,
+      "reheating_factor": 1.5,
+      "validate_neighbors": true
+    }
+  },
+  "results": {
+    "time_seconds": 1.308457374572754,
+    "n_iterations": 5000,
+    "cost": 3453.4,
+    "solution": [
+      [
+        177,
+        3,
+        88,
+        8,
+        186,
+        127,
+        98,
+        157,
+        137
+      ],
+      [
+        113,
+        13,
+        43,
+        34,
+        39
+      ],
+      [
+        21,
+        23,
+        182,
+        163,
+        194,
+        145,
+        52,
+        15,
+        198
+      ],
+      [
+        20,
+        41,
+        85,
+        80,
+        31,
+        25,
+        172,
+        77,
+        110
+      ],
+      [
+        30,
+        120,
+        19,
+        192,
+        196,
+        97,
+        14,
+        89,
+        28
+      ],
+      [
+        32,
+        171,
+        65,
+        86,
+        115,
+        94,
+        51,
+        174,
+        136,
+        189
+      ],
+      [
+        170,
+        134,
+        50,
+        156,
+        112,
+        168,
+        79,
+        29,
+        87,
+        42,
+        123
+      ],
+      [
+        45,
+        178,
+        27,
+        173,
+        154,
+        24,
+        64,
+        109
+      ],
+      [
+        48,
+        26,
+        152,
+        40,
+        153,
+        169,
+        195,
+        105
+      ],
+      [
+        161,
+        104,
+        18,
+        54,
+        185,
+        132,
+        7,
+        117,
+        49,
+        183
+      ],
+      [
+        114,
+        159,
+        38,
+        150,
+        22,
+        16,
+        140,
+        187,
+        142,
+        111,
+        63,
+        56
+      ],
+      [
+        57,
+        118,
+        83,
+        143,
+        176,
+        36,
+        33,
+        121,
+        165
+      ],
+      [
+        133,
+        75,
+        92,
+        59,
+        149
+      ],
+      [
+        60,
+        82,
+        180,
+        84,
+        191,
+        125,
+        4,
+        72,
+        188,
+        108
+      ],
+      [
+        61,
+        100,
+        179
+      ],
+      [
+        62,
+        131,
+        44,
+        102,
+        146,
+        96,
+        130,
+        74
+      ],
+      [
+        164,
+        66,
+        147,
+        160,
+        47,
+        91,
+        70
+      ],
+      [
+        68,
+        76
+      ],
+      [
+        73,
+        116,
+        12,
+        129,
+        11,
+        6,
+        122,
+        139
+      ],
+      [
+        78,
+        199
+      ],
+      [
+        93,
+        55,
+        58,
+        181,
+        99
+      ],
+      [
+        101,
+        144,
+        119,
+        166,
+        35,
+        126,
+        71,
+        9,
+        1,
+        53
+      ],
+      [
+        148,
+        103,
+        197,
+        124,
+        141,
+        69,
+        200,
+        162
+      ],
+      [
+        135,
+        184,
+        151,
+        37,
+        81,
+        138
+      ],
+      [
+        155,
+        175,
+        2,
+        90,
+        67,
+        17,
+        107
+      ],
+      [
+        190,
+        5,
+        10,
+        193,
+        46,
+        128,
+        106,
+        167,
+        95,
+        158
+      ]
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 3454.000000000005
+      },
+      {
+        "iteration": 1,
+        "cost": 3454.0
+      },
+      {
+        "iteration": 2912,
+        "cost": 3453.4
+      },
+      {
+        "iteration": 5000,
+        "cost": 3453.4
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 3454.0,
+      "n_vehicles": 26,
+      "improvement": 0.599999999999909,
+      "improvement_pct": 0.017371163867976522,
+      "constructor": "savings_parallel",
+      "solver_name": "SimulatedAnnealingSolver",
+      "final_cost": 3453.4,
+      "iterations": 5000,
+      "time_seconds": 1.3086326122283936,
+      "accepted_moves": 5000,
+      "rejected_moves": 0,
+      "acceptance_rate": 1.0,
+      "iterations_per_second": 3820.7820539378076,
+      "final_temperature": 164.06738886380373,
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "invalid_neighbors": 0,
+      "invalid_neighbor_rate": 0.0
+    }
+  }
+}

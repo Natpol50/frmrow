@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "user": "atf",
+    "date": "2025-11-12T13:11:44.893599",
+    "hardware_id": "Ashas-lvmxxr-u",
+    "cpu_arch": "x86_64",
+    "ram": "30.9GB",
+    "python_version": "3.11.14"
+  },
+  "hash_run": "4ce8cca269755499167d78341320a9b2f44f2057173cc433f172027159dc3991",
+  "hash_config": "1ce95565969e7ec10695a8fa743c81e9c00d0453c9b8555986226a68e4287390",
+  "config": {
+    "instance_name": "C101",
+    "solver_name": "alns",
+    "seed": 45,
+    "parameters": {
+      "max_time": 5,
+      "max_iterations": 50000,
+      "max_iterations_no_improvement": 300,
+      "record_convergence": true,
+      "verbose": true,
+      "seed": null,
+      "name": "alns",
+      "destroy_operators": [
+        "random",
+        "worst",
+        "shaw"
+      ],
+      "repair_operators": [
+        "greedy",
+        "regret2"
+      ],
+      "min_destroy_size": null,
+      "max_destroy_size": null,
+      "destroy_size_ratio": 0.3,
+      "initial_weight": 1.0,
+      "weight_decay": 0.95,
+      "weight_update_interval": 100,
+      "score_new_best": 33.0,
+      "score_better": 9.0,
+      "score_accepted": 3.0,
+      "score_rejected": 0.0,
+      "initial_temperature": 2000,
+      "cooling_rate": 0.9995,
+      "min_temperature": 0.01,
+      "shaw_relatedness_weight_distance": 1.0,
+      "shaw_relatedness_weight_time": 0.5,
+      "shaw_relatedness_weight_demand": 0.1,
+      "shaw_removal_randomness": 6.0
+    }
+  },
+  "results": {
+    "time_seconds": 5.292459011077881,
+    "n_iterations": 22,
+    "cost": 935.4000000000001,
+    "solution": [
+      [
+        13,
+        11,
+        9,
+        6,
+        4,
+        2,
+        1,
+        75
+      ],
+      [
+        5,
+        3,
+        7,
+        8,
+        10
+      ],
+      [
+        17,
+        18,
+        19,
+        15,
+        16,
+        14,
+        12
+      ],
+      [
+        20,
+        24,
+        25,
+        27,
+        29,
+        30,
+        28,
+        26,
+        23,
+        22,
+        21
+      ],
+      [
+        32,
+        33,
+        31,
+        35,
+        37,
+        38,
+        39,
+        36,
+        34
+      ],
+      [
+        43,
+        42,
+        41,
+        62,
+        74,
+        72,
+        61,
+        64,
+        68,
+        66,
+        69
+      ],
+      [
+        67,
+        65,
+        40,
+        44,
+        46,
+        45,
+        48,
+        51,
+        50,
+        52,
+        49,
+        47
+      ],
+      [
+        57,
+        55,
+        54,
+        53,
+        56,
+        58,
+        60,
+        59
+      ],
+      [
+        63
+      ],
+      [],
+      [
+        81,
+        78,
+        76,
+        71,
+        70,
+        73,
+        77,
+        79,
+        80
+      ],
+      [
+        90,
+        87,
+        86,
+        83,
+        82,
+        84,
+        85,
+        88,
+        89,
+        91
+      ],
+      [
+        98,
+        96,
+        95,
+        94,
+        92,
+        93,
+        97,
+        100,
+        99
+      ]
+    ],
+    "convergence": [
+      {
+        "iteration": 0,
+        "cost": 1010.3999999999996
+      },
+      {
+        "iteration": 1,
+        "cost": 990.2
+      },
+      {
+        "iteration": 1,
+        "cost": 990.2
+      },
+      {
+        "iteration": 2,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 2,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 3,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 4,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 5,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 6,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 7,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 8,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 9,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 10,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 11,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 12,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 13,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 14,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 15,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 16,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 17,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 18,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 19,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 20,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 21,
+        "cost": 935.4000000000001
+      },
+      {
+        "iteration": 22,
+        "cost": 935.4000000000001
+      }
+    ],
+    "additional_info": {
+      "initial_cost": 1010.4000000000001,
+      "n_vehicles": 12,
+      "improvement": 75.0,
+      "improvement_pct": 7.422802850356295,
+      "constructor": "savings",
+      "solver_name": "ALNSSolver",
+      "final_cost": 935.4000000000001,
+      "iterations": 22,
+      "time_seconds": 5.292561054229736,
+      "accepted_moves": 22,
+      "rejected_moves": 0,
+      "acceptance_rate": 1.0,
+      "iterations_per_second": 4.156777744192091
+    }
+  }
+}
