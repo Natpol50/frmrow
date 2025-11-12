@@ -144,20 +144,14 @@ class SolverManager:
         # If not forcing recompute, try to load existing results
         if not force_recompute:
             try:
-                existing_results = self.run_manager.get_run(run_config)
-            except Exception:
+                existing_run = self.run_manager.load_run(run_config)
+                existing_results = existing_run.results  # ← Extrais juste la partie results
+            except FileNotFoundError:
                 existing_results = None
                 print(f"[LOAD] No existing results found.")
-
+        
             if existing_results:
-                # Try to display the filename or source if available
-                file_info = getattr(existing_results, 'file_path', None) \
-                            or getattr(existing_results, 'filename', None) \
-                            or getattr(existing_results, 'source', None)
-                if file_info:
-                    print(f"[LOAD] Found existing results — loaded from '{file_info}'")
-                else:
-                    print(f"[LOAD] Found existing results — loaded")
+                print(f"[LOAD] Found existing results — loaded")
                 print(f"{'='*60}\n")
                 return existing_results
 

@@ -432,6 +432,7 @@ class ALNSSolver(AbstractSolver):
 
             # Enregistre convergence et continue
             self._record_convergence()
+            print(f"[Iter {self.iteration:6d}] Time = {(time.time() - self.start_time):.2f}s")
 
         return self._finish_solving()
     

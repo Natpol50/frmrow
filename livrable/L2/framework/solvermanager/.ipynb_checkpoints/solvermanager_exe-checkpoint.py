@@ -92,10 +92,11 @@ class SolverManager:
                       config: Any,
                       constructor: str = "nearest_neighbor",
                       seed: Optional[int] = None,
-                      save_results: bool = True) -> Results:
+                      save_results: bool = True,
+                      force_recompute: bool = False) -> Results:
         """
         Lance UNE expérience complète.
-        
+
         Args:
             instance_name: Nom de l'instance (ex: "C101")
             solver_name: Nom du solver ('local_search', 'simulated_annealing')
@@ -103,26 +104,27 @@ class SolverManager:
             constructor: Nom du constructeur ('nearest_neighbor', 'savings', etc.)
             seed: Graine aléatoire (pour reproductibilité)
             save_results: Si True, sauvegarde dans RunFileManager
-            
+            force_recompute: Si True, force la recomputation même si un run existant est présent
+
         Returns:
             Results avec tous les résultats
-            
+
         Raises:
             ValueError: Si solver_name ou constructor inconnu
         """
         print(f"\n{'='*60}")
         print(f"Experiment: {instance_name} + {solver_name}")
         print(f"{'='*60}")
-        
+
         # 1. Charge l'instance
         print(f"[1/6] Loading instance '{instance_name}'...")
         instance = self._get_instance(instance_name)
         print(f"      → {instance.dimension-1} clients, capacity={instance.capacity}")
-        
+
         # 2. Crée l'évaluateur
         print(f"[2/6] Creating evaluator...")
         evaluator = self._get_evaluator(instance_name, instance)
-        
+
         # 3. Construit la solution initiale
         print(f"[3/6] Building initial solution with '{constructor}'...")
         initial_solution = self._construct_initial_solution(
@@ -130,45 +132,67 @@ class SolverManager:
         )
         print(f"      → Cost: {initial_solution.total_cost:.2f}, "
               f"Vehicles: {initial_solution.n_vehicles_used}")
+
+        # Prepare run config (used to identify saved runs)
+        run_config = Config(
+            instance_name=instance_name,
+            solver_name=solver_name,
+            seed=seed or 0,
+            parameters=asdict(config)
+        )
+
+        # If not forcing recompute, try to load existing results
+        if not force_recompute:
+            try:
+                existing_run = self.run_manager.load_run(run_config)
+                existing_results = existing_run.results  # ← Extrais juste la partie results
+            except FileNotFoundError:
+                existing_results = None
+                print(f"[LOAD] No existing results found.")
         
+            if existing_results:
+                print(f"[LOAD] Found existing results — loaded")
+                print(f"{'='*60}\n")
+                return existing_results
+
         # 4. Crée et lance le solver
         print(f"[4/6] Solving with '{solver_name}'...")
         start_time = time.time()
-        
+
         solver = self._create_solver(
             solver_name, instance, evaluator, initial_solution, config
         )
-        
+
         best_solution = solver.solve()
         elapsed_time = time.time() - start_time
-        
+
         print(f"      → Cost: {best_solution.total_cost:.2f}, "
               f"Vehicles: {best_solution.n_vehicles_used}")
         print(f"      → Time: {elapsed_time:.2f}s")
         print(f"      → Improvement: {initial_solution.total_cost - best_solution.total_cost:.2f} "
               f"({(initial_solution.total_cost - best_solution.total_cost) / initial_solution.total_cost * 100:.1f}%)")
-        
+
         print(f"[5/6] Verifying full VRP solution...")
         is_valid, message = best_solution.is_valid_vrp(instance, evaluator)
         if is_valid:
             print(f"      → Solution is VALID")
         else:
             print(f"      → Solution is INVALID: {message}")
-            
+
         # 5. Prépare les résultats
-        print(f"[6/6] Saving results...")
-        
+        print(f"[6/6] Preparing results...")
+
         # Convertit convergence
         convergence = []
         for point in solver.get_convergence_history():
             convergence.append(ConvergencePoint(
-            iteration=point.iteration,
-            cost=point.cost
+                iteration=point.iteration,
+                cost=point.cost
             ))
-        
+
         results = Results(
             time_seconds=elapsed_time,
-            n_iterations=solver.iteration,
+            n_iterations=getattr(solver, 'iteration', 0),
             cost=best_solution.total_cost,
             solution=best_solution.routes,
             convergence=convergence,
@@ -176,28 +200,25 @@ class SolverManager:
                 'initial_cost': initial_solution.total_cost,
                 'n_vehicles': best_solution.n_vehicles_used,
                 'improvement': initial_solution.total_cost - best_solution.total_cost,
-                'improvement_pct': (initial_solution.total_cost - best_solution.total_cost) 
+                'improvement_pct': (initial_solution.total_cost - best_solution.total_cost)
                                   / initial_solution.total_cost * 100,
                 'constructor': constructor,
-                **solver.get_statistics()
+                **(solver.get_statistics() if hasattr(solver, 'get_statistics') else {})
             }
         )
-        
+
         # Sauvegarde si demandé
-        # if save_results:
-        if True : # [DEBUG]
-            run_config = Config(
-                instance_name=instance_name,
-                solver_name=solver_name,
-                seed=seed or 0,
-                parameters=asdict(config)
-            )
-            self.run_manager.add_run(run_config, results)
-            print(f"      → Results saved")
-        else :
+        if save_results:
+            try:
+                self.run_manager.add_run(run_config, results)
+                print(f"      → Results saved")
+            except Exception as e:
+                print(f"      → Failed to save results: {e}")
+        else:
             print(f"      → Results NOT saved (save_results=False)")
+
         print(f"{'='*60}\n")
-        
+
         return results
     
     def run_batch(self,
