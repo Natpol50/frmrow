@@ -125,14 +125,6 @@ class SolverManager:
         print(f"[2/6] Creating evaluator...")
         evaluator = self._get_evaluator(instance_name, instance)
 
-        # 3. Construit la solution initiale
-        print(f"[3/6] Building initial solution with '{constructor}'...")
-        initial_solution = self._construct_initial_solution(
-            instance, evaluator, constructor, seed
-        )
-        print(f"      → Cost: {initial_solution.total_cost:.2f}, "
-              f"Vehicles: {initial_solution.n_vehicles_used}")
-
         # Prepare run config (used to identify saved runs)
         run_config = Config(
             instance_name=instance_name,
@@ -140,7 +132,7 @@ class SolverManager:
             seed=seed or 0,
             parameters=asdict(config)
         )
-
+        
         # If not forcing recompute, try to load existing results
         if not force_recompute:
             try:
@@ -154,6 +146,18 @@ class SolverManager:
                 print(f"[LOAD] Found existing results — loaded")
                 print(f"{'='*60}\n")
                 return existing_results
+                
+        # 3. Construit la solution initiale
+        print(f"[3/6] Building initial solution with '{constructor}'...")
+        initial_solution = self._construct_initial_solution(
+            instance, evaluator, constructor, seed
+        )
+        print(f"      → Cost: {initial_solution.total_cost:.2f}, "
+              f"Vehicles: {initial_solution.n_vehicles_used}")
+
+
+
+
 
         # 4. Crée et lance le solver
         print(f"[4/6] Solving with '{solver_name}'...")
